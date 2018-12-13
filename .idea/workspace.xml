@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c28e15f-f97a-4a78-9005-fd137a5663c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/MagicianTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/MagicianTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/ScoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/ScoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/WarriorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/WarriorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Magician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Magician.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Scout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Scout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +19,7 @@
     <SUITE FILE_PATH="coverage/OPCMagicWorld$PlayerTest.ic" NAME="PlayerTest Coverage Results" MODIFIED="1544710667575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.elodie.opcmagicworld.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OPCMagicWorld$All_in_OPCMagicWorld.ic" NAME="All in OPCMagicWorld Coverage Results" MODIFIED="1544711930153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/OPCMagicWorld$All_in_OPCMagicWorld.ic" NAME="All in OPCMagicWorld Coverage Results" MODIFIED="1544713239101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/OPCMagicWorld$WarriorTest.ic" NAME="WarriorTest Coverage Results" MODIFIED="1544711213787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.elodie.opcmagicworld.*</FILTER>
     </SUITE>
@@ -29,51 +28,24 @@
     <option name="myAddOrReplace" value="1" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="182" />
+    <option name="myElementSize" value="181" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="102">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Magician.java">
+        <entry file="file://$PROJECT_DIR$/Test/com/elodie/opcmagicworld/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/com/elodie/opcmagicworld/MagicianTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2074">
-              <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Scout.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="38" column="61" lean-forward="true" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Test/com/elodie/opcmagicworld/ScoutTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="103" column="22" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,8 +56,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="581">
+              <caret line="135" column="16" lean-forward="true" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#strengthSetUp#0;class#Game#0" />
+                <element signature="method#agilitySetUp#0;class#Game#0" />
+                <element signature="method#intelSetUp#0;class#Game#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,9 +95,12 @@
         <option value="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Warrior.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Magician.java" />
         <option value="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/WarriorTest.java" />
-        <option value="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/MagicianTest.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Scout.java" />
         <option value="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/ScoutTest.java" />
+        <option value="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Game.java" />
+        <option value="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/GameTest.java" />
+        <option value="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/MagicianTest.java" />
+        <option value="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Main.java" />
       </list>
     </option>
   </component>
@@ -178,10 +159,10 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544711927404" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544713736120" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="com.elodie.opcmagicworld.PlayerTest" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
   </component>
   <component name="RecentsManager">
@@ -189,8 +170,8 @@
       <recent name="com.elodie.opcmagicworld" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
-      <recent name="com.elodie.opcmagicworld.PlayerTest" />
       <recent name="" />
+      <recent name="com.elodie.opcmagicworld.PlayerTest" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -205,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in OPCMagicWorld">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.elodie.opcmagicworld.Main" />
       <module name="OPCMagicWorld" />
@@ -220,6 +201,22 @@
       <module name="OPCMagicWorld" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.Given_PlayerHPGetsToZero_GameStops" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OPCMagicWorld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elodie.opcmagicworld.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.elodie.opcmagicworld" />
+      <option name="MAIN_CLASS_NAME" value="com.elodie.opcmagicworld.GameTest" />
+      <option name="METHOD_NAME" value="Given_PlayerHPGetsToZero_GameStops" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -257,10 +254,13 @@
       <item itemvalue="JUnit.PlayerTest" />
       <item itemvalue="JUnit.WarriorTest" />
       <item itemvalue="JUnit.All in OPCMagicWorld" />
+      <item itemvalue="JUnit.GameTest.Given_PlayerHPGetsToZero_GameStops" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in OPCMagicWorld" />
+        <item itemvalue="JUnit.GameTest.Given_PlayerHPGetsToZero_GameStops" />
         <item itemvalue="JUnit.WarriorTest" />
         <item itemvalue="JUnit.PlayerTest" />
       </list>
@@ -292,10 +292,24 @@
     <history-entry file="All_in_OPCMagicWorld - 2018.12.13 at 15h 34m 02s.xml">
       <configuration name="All in OPCMagicWorld" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_OPCMagicWorld - 2018.12.13 at 15h 38m 36s.xml">
+      <configuration name="All in OPCMagicWorld" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_OPCMagicWorld - 2018.12.13 at 15h 39m 01s.xml">
+      <configuration name="All in OPCMagicWorld" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_Given_PlayerHPGetsToZero_GameStops - 2018.12.13 at 15h 47m 11s.xml">
+      <configuration name="GameTest.Given_PlayerHPGetsToZero_GameStops" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_Given_PlayerHPGetsToZero_GameStops - 2018.12.13 at 15h 47m 47s.xml">
+      <configuration name="GameTest.Given_PlayerHPGetsToZero_GameStops" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_OPCMagicWorld - 2018.12.13 at 16h 00m 52s.xml">
+      <configuration name="All in OPCMagicWorld" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -332,7 +346,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -358,27 +372,10 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/PlayerTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
           <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/com/elodie/opcmagicworld/PlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -393,38 +390,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/com/elodie/opcmagicworld/WarriorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2161">
-          <caret line="141" column="5" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-612">
           <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Magician.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/com/elodie/opcmagicworld/MagicianTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -435,13 +404,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/com/elodie/opcmagicworld/ScoutTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Magician.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/com/elodie/opcmagicworld/PlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
-          <caret line="103" column="22" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/com/elodie/opcmagicworld/ScoutTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="104" column="45" lean-forward="true" selection-start-line="104" selection-start-column="45" selection-end-line="104" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/com/elodie/opcmagicworld/WarriorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="141" column="5" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/com/elodie/opcmagicworld/MagicianTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="135" column="16" lean-forward="true" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#strengthSetUp#0;class#Game#0" />
+            <element signature="method#agilitySetUp#0;class#Game#0" />
+            <element signature="method#intelSetUp#0;class#Game#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/com/elodie/opcmagicworld/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
