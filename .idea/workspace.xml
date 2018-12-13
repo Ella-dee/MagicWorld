@@ -251,10 +251,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.PlayerTest" />
-      <item itemvalue="JUnit.WarriorTest" />
       <item itemvalue="JUnit.All in OPCMagicWorld" />
       <item itemvalue="JUnit.GameTest.Given_PlayerHPGetsToZero_GameStops" />
+      <item itemvalue="JUnit.PlayerTest" />
+      <item itemvalue="JUnit.WarriorTest" />
     </list>
     <recent_temporary>
       <list>
