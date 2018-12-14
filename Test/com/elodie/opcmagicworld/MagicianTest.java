@@ -43,13 +43,12 @@ class MagicianTest extends PlayerTest {
     @Test
     void GivenBasicAttack_MagicianIntel_EqualsDamages() {
         Magician player1 = new Magician("Test Player", 3, 15, 10, 2, 2);
-        int damages = player1.getpIntel();
         int expectedResult = 2;
-        int result = damages;
+        int result = player1.getpIntel();
         assertEquals(expectedResult, result);
 
         String expectedStringResult = "Test Player utilise boule de feu et inflige 2 dommages";
-        String stringResult = player1.getpName()+" utilise "+player1.getBasicAttack()+" et inflige "+damages+" dommages";
+        String stringResult = player1.getpName()+" utilise "+player1.getBasicAttack()+" et inflige "+result+" dommages";
         assertEquals(expectedStringResult, stringResult);
     }
     @Test
@@ -92,9 +91,8 @@ class MagicianTest extends PlayerTest {
     @Test
     void GivenSpecialAttack_Soin_MagicianMakesCureForTwiceItsIntel() {
         Magician player1 = new Magician("Test Player", 4, 5, 10, 2, 2);
-        int cure = player1.getpIntel()*2;
         int expectedResult = 4;
-        int result = cure;
+        int result = player1.getpIntel()*2;
         assertEquals(expectedResult, result);
     }
     @Test

@@ -43,13 +43,12 @@ class WarriorTest extends PlayerTest {
     @Test
     void GivenBasicAttack_WarriorStrength_EqualsDamages() {
         Player player1 = new Warrior("Test Player", 3, 15, 10, 2, 2);
-        int damages = player1.getpStrength();
         int expectedResult = 10;
-        int result = damages;
+        int result =  player1.getpStrength();
         assertEquals(expectedResult, result);
 
         String expectedStringResult = "Test Player utilise coup d'épée et inflige 10 dommages";
-        String stringResult = player1.getpName()+" utilise "+player1.getBasicAttack()+" et inflige "+damages+" dommages";
+        String stringResult = player1.getpName()+" utilise "+player1.getBasicAttack()+" et inflige "+result+" dommages";
         assertEquals(expectedStringResult, stringResult);
     }
     @Test
@@ -91,9 +90,8 @@ class WarriorTest extends PlayerTest {
     @Test
     void GivenSpecialAttack_CoupDeRage_DamagesEqualsWarriorStrengthMultiplies2() {
         Player player1 = new Warrior("Test Player", 4, 5, 10, 2, 2);
-        int damages = player1.getpStrength()*2;
         int expectedResult = 20;
-        int result = damages;
+        int result = player1.getpStrength()*2;
         assertEquals(expectedResult, result);
     }
     @Test
@@ -118,9 +116,8 @@ class WarriorTest extends PlayerTest {
     @Test
     void GivenSpecialAttack_WarriorAttackBackfiresAndLosesHealthPoints_ByOwnStrengthDividedBy2() {
         Player player1 = new Warrior("Test Player", 4, 5, 10, 2, 2);
-        int backfire = player1.getpStrength() / 2;
         int expectedResult = 5;
-        int result = backfire;
+        int result = player1.getpStrength() / 2;
         assertEquals(expectedResult, result);
     }
     @Test

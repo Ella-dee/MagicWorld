@@ -43,13 +43,12 @@ class ScoutTest extends PlayerTest {
     @Test
     void GivenBasicAttack_ScoutAgility_EqualsDamages() {
         Player player1 = new Scout("Test Player", 3, 15, 10, 2, 2);
-        int damages = player1.getpAgility();
         int expectedResult = 2;
-        int result = damages;
+        int result = player1.getpAgility();
         assertEquals(expectedResult, result);
 
         String expectedStringResult = "Test Player utilise tir à l'arc et inflige 2 dommages";
-        String stringResult = player1.getpName()+" utilise "+player1.getBasicAttack()+" et inflige "+damages+" dommages";
+        String stringResult = player1.getpName()+" utilise "+player1.getBasicAttack()+" et inflige "+result+" dommages";
         assertEquals(expectedStringResult, stringResult);
     }
     @Test

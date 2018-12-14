@@ -1,5 +1,6 @@
 package com.elodie.opcmagicworld;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Player {
@@ -60,12 +61,23 @@ public class Player {
     public void attackSpecial(Player player){ }
 
     public int  actionChoice(){
-        System.out.println(pName+" (vitalité "+pHP+"), veuillez choisir votre action: 1- attaque basique, 2- attaque spéciale:");
+        int attackChoice = 0;
         Scanner sc = new Scanner(System.in);
-        int attackChoice = sc.nextInt();
-        while((attackChoice!=1) &&(attackChoice!=2)) {
-            System.out.println("Veuillez choisir une attaque valide: 1- attaque basique, 2- attaque spéciale:");
-            actionChoice();}
+        String whichAttack = "Veuillez choisir une attaque valide: 1- attaque basique, 2- attaque spéciale:";
+        do {
+            try {
+                System.out.println(pName + " (vitalité " + pHP + "), "+ whichAttack);
+                attackChoice = sc.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println(whichAttack);
+                sc.next();
+            } finally {
+                if (attackChoice < 1 || attackChoice > 100) {
+                    System.out.println(whichAttack);
+                }
+            }
+        }
+        while((attackChoice!=1) &&(attackChoice!=2));
         return attackChoice;
     }
 }

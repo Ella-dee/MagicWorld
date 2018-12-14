@@ -4,7 +4,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Game {
-    public static void start() {
+
+    protected static void start() {
         System.out.println("Bienvenu(e) dans Magic World!!!!");
         System.out.println("Création du personnage Joueur 1");
         Player player1 = enterPlayer();
@@ -23,7 +24,7 @@ public class Game {
         }while((player1.getpHP()>0)&&(player2.getpHP()>0));
 
     }
-    public static Player enterPlayer() {
+    private static Player enterPlayer() {
         int uClass = chooseClass();
         if (uClass == 1) {
             Warrior player = new Warrior("", 0, 0, 0, 0, 0);
@@ -40,14 +41,14 @@ public class Game {
         }
         return enterPlayer();
     }
-    public static void setStats(Player player){
+    private static void setStats(Player player){
         player.setpLevel(levelSetUp());
         player.setpHP(player.getpLevel()*5);
         player.setpStrength(strengthSetUp(player));
         player.setpAgility(agilitySetUp(player));
         player.setpIntel(intelSetUp(player));
     }
-    public static int levelSetUp(){
+    private static int levelSetUp(){
         int level = 0;
         Scanner sc = new Scanner(System.in);
         do {
@@ -64,7 +65,7 @@ public class Game {
         } while ((level < 1) || (level > 100));
         return level;
     }
-    public static int strengthSetUp(Player player){
+    private static int strengthSetUp(Player player){
         int strength = 0;
         int totalLeft = player.getpLevel();
         Scanner sc = new Scanner(System.in);
@@ -85,7 +86,7 @@ public class Game {
         player.setpStrength(strength);
         return strength;
     }
-    public static int agilitySetUp(Player player){
+    private static int agilitySetUp(Player player){
         int agility = 0;
         int totalLeft = player.getpLevel()-player.getpStrength();
         Scanner sc = new Scanner(System.in);
@@ -107,7 +108,7 @@ public class Game {
         player.setpAgility(agility);
         return agility;
     }
-    public static int intelSetUp(Player player){
+    private static int intelSetUp(Player player){
         int intel = 0;
         int totalLeft = player.getpLevel()-player.getpStrength()-player.getpAgility();
         Scanner sc = new Scanner(System.in);
@@ -129,7 +130,7 @@ public class Game {
         player.setpIntel(intel);
         return intel;
     }
-    public static int chooseClass(){
+    private static int chooseClass(){
         Scanner sc = new Scanner(System.in);
         int uClass = 0;
         do {
@@ -144,7 +145,7 @@ public class Game {
         } while ((uClass != 1) && (uClass != 2) && (uClass != 3));
         return uClass;
     }
-    public static String stop(){
+    protected static String stop(){
         String endgame = "GAME OVER!";
         System.out.println(endgame);
         return endgame;
