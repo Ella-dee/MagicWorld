@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c28e15f-f97a-4a78-9005-fd137a5663c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Magician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Magician.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Scout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Scout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Warrior.java" afterDir="false" />
-    </list>
+    <list default="true" id="1c28e15f-f97a-4a78-9005-fd137a5663c5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Scout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="51" selection-start-line="51" selection-end-line="58" selection-end-column="7" />
+            <state relative-caret-position="291">
+              <caret line="73" column="61" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
               <folding>
                 <element signature="e#1503#1504#0" expanded="true" />
                 <element signature="e#1563#1564#0" expanded="true" />
@@ -48,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Magician.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="51" column="58" lean-forward="true" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+            <state relative-caret-position="240">
+              <caret line="87" column="76" selection-start-line="87" selection-start-column="76" selection-end-line="87" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -84,8 +78,8 @@
         <option value="$PROJECT_DIR$/Test/com/elodie/opcmagicworld/WarriorTest.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Game.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Player.java" />
-        <option value="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Scout.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Warrior.java" />
+        <option value="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Scout.java" />
         <option value="$PROJECT_DIR$/src/com/elodie/opcmagicworld/Magician.java" />
       </list>
     </option>
@@ -149,7 +143,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544786246224" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544786531721" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -535,8 +529,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Scout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="51" selection-start-line="51" selection-end-line="58" selection-end-column="7" />
+        <state relative-caret-position="291">
+          <caret line="73" column="61" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
           <folding>
             <element signature="e#1503#1504#0" expanded="true" />
             <element signature="e#1563#1564#0" expanded="true" />
@@ -546,8 +540,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elodie/opcmagicworld/Magician.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="51" column="58" lean-forward="true" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+        <state relative-caret-position="240">
+          <caret line="87" column="76" selection-start-line="87" selection-start-column="76" selection-end-line="87" selection-end-column="76" />
         </state>
       </provider>
     </entry>

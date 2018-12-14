@@ -77,7 +77,6 @@ public class Warrior extends Player{
      * Vérifie si l'adversaire est mort (points de vie à zéro)
      * Vérifie si le Guerrier est mort (points de vie à zéro)
      * @param player adversaire
-     * @param player le Guerrier lui-même
      */
     @Override
     public void attackSpecial(Player player){

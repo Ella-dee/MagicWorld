@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.elodie.opcmagicworld","l":"Magician"},{"p":"com.elodie.opcmagicworld","l":"Scout"},{"p":"com.elodie.opcmagicworld","l":"Warrior"}]
