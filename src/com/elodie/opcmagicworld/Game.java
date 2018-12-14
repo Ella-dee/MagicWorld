@@ -29,7 +29,7 @@ class Game {
      * Lance le jeu depuis le 'main'.
      * Appelle l'instanciation des deux personnages
      * Lance les combats avec player.attack()
-     * @see Player
+     * @see Player#attack(Player)
      * Les combats tournent en boucle jusqu'à ce que les points de vie d'un joueur tombent à zéro.
      */
     static void start() {
@@ -58,8 +58,7 @@ class Game {
      * @see Magician
      * On lance setStats pour construire le personnage.
      * On retourne le perso créé.
-     * @return player
-     * @return enterplayer()
+     * @return le joueur instancié
      */
     private static Player enterPlayer() {
         int uClass = chooseClass();
@@ -94,7 +93,7 @@ class Game {
     /**
      * Choix du niveau 'level' du personnage par le joueur.
      * Ne peut être zéro, et est au maximum à 100.
-     * @return level
+     * @return le niveau du joueur sous forme d'un entier
      */
     private static int levelSetUp(){
         int level = 0;
@@ -117,7 +116,7 @@ class Game {
      * Choix de la force 'strength' du personnage par le joueur.
      * Peut être zéro, et est au maximum à 100.
      * Ne doit pas dépasser level.
-     * @return strength
+     * @return la force du joueur sous forme d'un entier
      */
     private static int strengthSetUp(Player player){
         int strength = 0;
@@ -147,7 +146,7 @@ class Game {
      * Choix de la dextérité 'agility' du personnage par le joueur.
      * Peut être zéro, et est au maximum à 100.
      * Ne doit pas dépasser la somme de level et strength.
-     * @return agility
+     * @return la dextérité du joueur sous forme d'un entier
      */
     private static int agilitySetUp(Player player){
         int agility = 0;
@@ -177,7 +176,7 @@ class Game {
      * Choix de l'intéligence 'intel' du personnage par le joueur.
      * Peut être zéro, et est au maximum à 100.
      * Ne doit pas dépasser la somme de level,strength et agility.
-     * @return intel
+     * @return l'inteligence du joueur sous forme d'un entier
      */
     private static int intelSetUp(Player player){
         int intel = 0;
@@ -205,7 +204,7 @@ class Game {
     /**
      * Choix de la classe personnage par le joueur.
      * Choix 1, 2 ou 3.
-     * @return uClass
+     * @return le choix de classe personnage du joueur sous forme d'un entier
      */
     private static int chooseClass(){
         Scanner sc = new Scanner(System.in);
@@ -225,7 +224,7 @@ class Game {
 
     /**
      * Une fois les attaques arrêtées et qu'un joueur a perdu, affiche GAME OVER.
-     * @return endgame
+     * @return la chaîne de caractères GAME OVER
      */
     static String stop(){
         String endgame = "GAME OVER!";

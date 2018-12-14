@@ -38,12 +38,12 @@ class Player {
     /**
      * Constructeur du Player:
      * Les points de vie sont le level multiplié par 5.
-     * @param pName
-     * @param pLevel
-     * @param pHP
-     * @param pStrength
-     * @param pAgility
-     * @param pIntel
+     * @param pName nom du joueur
+     * @param pLevel niveau du joueur
+     * @param pHP points de vie du joueur
+     * @param pStrength force du joueur
+     * @param pAgility dextérité du joueur
+     * @param pIntel intéligence du joueur
      */
     public Player(String pName, int pLevel, int pHP, int pStrength, int pAgility, int pIntel) {
         this.pName = pName;
@@ -103,37 +103,37 @@ class Player {
 
     /**
      * Met à jour le nom du  joueur
-     * @param pName
+     * @param pName nom
      */
     public void setpName(String pName) { this.pName = pName;  }
     /**
      * Met à jour le niveau du  joueur
-     * @param pLevel
+     * @param pLevel niveau
      */
     public void setpLevel(int pLevel) { this.pLevel = pLevel; }
     /**
      * Met à jour les points de vie du  joueur
-     * @param pHP
+     * @param pHP points de vie
      */
     public void setpHP(int pHP) {this.pHP = pHP; }
     /**
      * Met à jour la force du  joueur
-     * @param pStrength
+     * @param pStrength force
      */
     public void setpStrength(int pStrength) {this.pStrength = pStrength; }
     /**
      * Met à jour la dextérité du  joueur
-     * @param pAgility
+     * @param pAgility dextérité
      */
     public void setpAgility(int pAgility) {this.pAgility = pAgility; }
     /**
      * Met à jour l'intelligence du  joueur
-     * @param pIntel
+     * @param pIntel intéligence
      */
     public void setpIntel(int pIntel) {this.pIntel = pIntel;}
     /**
      * Met à jour l'attaque basique du  joueur selon la classe choisie
-     * @param basicAttack
+     * @param basicAttack attaque  basique
      * @see Warrior#setBasicAttack(String)
      * @see Scout#setBasicAttack(String)
      * @see Magician#setBasicAttack(String)
@@ -141,7 +141,7 @@ class Player {
     void setBasicAttack(String basicAttack) {this.basicAttack = basicAttack;    }
     /**
      * Met à jour l'attaque spéciale du  joueur selon la classe choisie
-     * @param specialAttack
+     * @param specialAttack attaque spéciale
      * @see Warrior#setSpecialAttack(String)
      * @see Scout#setBasicAttack(String)
      * @see Magician#setSpecialAttack(String)
@@ -165,7 +165,7 @@ class Player {
     /**
      * Appelle le joueur à choisir une action d'attaque avec actionchoice()
      * Avec ce choix, on appelle l'attaque basique ou l'attaque spéciale contre l'adversaire 'player'
-     * @param player
+     * @param player adversaire
      * @see #actionChoice()
      */
     public void attack(Player player){
@@ -176,7 +176,7 @@ class Player {
 
     /**
      * On lance une attaque basique contre l'adversaire 'player'
-     * @param player
+     * @param player adversaire
      * @see Warrior#attackBasic(Player)
      * @see Scout#attackBasic(Player)
      * @see Magician#attackBasic(Player)
@@ -185,7 +185,7 @@ class Player {
 
     /**
      * On lance une attaque spéciale contre l'adversaire 'player'
-     * @param player
+     * @param player adversaire
      * @see Warrior#attackSpecial(Player)
      * @see Scout#attackSpecial(Player)
      * @see Magician#attackSpecial(Player)
