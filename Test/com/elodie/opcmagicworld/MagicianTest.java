@@ -118,7 +118,7 @@ class MagicianTest extends PlayerTest {
         Magician player1 = new Magician("Test Player", 2, 10, 10, 2, 10);
         player1.setpHP(5);
         String stringExpectedResult = "Test Player utilise soin et gagne 5 points de vie";
-        String stringResult = player1.getpName()+" utilise "+player1.getSpecialAttack()+" et gagne "+((Magician) player1).checkCure()+" points de vie";
+        String stringResult = player1.getpName()+" utilise "+player1.getSpecialAttack()+" et gagne "+player1.checkCure()+" points de vie";
         assertEquals(stringExpectedResult, stringResult);
     }
 }

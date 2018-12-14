@@ -3,10 +3,10 @@ package com.elodie.opcmagicworld;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Game {
+class Game {
 
-    protected static void start() {
-        System.out.println("Bienvenu(e) dans Magic World!!!!");
+    static void start() {
+        System.out.println("Bienvenu-e dans Magic World!!!!");
         System.out.println("Création du personnage Joueur 1");
         Player player1 = enterPlayer();
         player1.setpName("Joueur 1");
@@ -69,33 +69,40 @@ public class Game {
         int strength = 0;
         int totalLeft = player.getpLevel();
         Scanner sc = new Scanner(System.in);
+        boolean catched;
         do {
             try {
+                catched = false;
                 System.out.print("force: ");
                 strength = sc.nextInt();
-            } catch (InputMismatchException e) {
+            } catch (InputMismatchException e2) {
                 System.out.println("Saisie erronée, votre choix n'est pas un nombre");
+                catched = true;
                 sc.next();
             }finally {
                 if(strength>totalLeft){
+                    catched = false;
                     System.out.println("La somme totale de vos caractéristiques ne doit pas dépasser votre niveau");
                     System.out.println("Il vous reste " + totalLeft + " points à assigner");
                 }
             }
-        } while ((strength < 0) || (strength > 100)||(strength>totalLeft));
+        } while ((strength < 0) || (strength > 100)||(strength>totalLeft)||(catched));
         player.setpStrength(strength);
         return strength;
     }
     private static int agilitySetUp(Player player){
         int agility = 0;
+        boolean catched;
         int totalLeft = player.getpLevel()-player.getpStrength();
         Scanner sc = new Scanner(System.in);
         do {
             try {
+                catched = false;
                 System.out.print("agilité: ");
                 agility = sc.nextInt();
             } catch (InputMismatchException e) {
                 System.out.println("Saisie erronée, votre choix n'est pas un nombre");
+                catched = true;
                 sc.next();
             }finally {
 
@@ -104,29 +111,31 @@ public class Game {
                     System.out.println("Il vous reste " + totalLeft + " points à assigner");
                 }
             }
-        } while ((agility < 0) || (agility > 100)||(agility>totalLeft));
+        } while ((agility < 0) || (agility > 100)||(agility>totalLeft)||(catched));
         player.setpAgility(agility);
         return agility;
     }
     private static int intelSetUp(Player player){
         int intel = 0;
+        boolean catched;
         int totalLeft = player.getpLevel()-player.getpStrength()-player.getpAgility();
         Scanner sc = new Scanner(System.in);
         do {
             try {
+                catched = false;
                 System.out.print("intéligence: ");
                 intel = sc.nextInt();
             } catch (InputMismatchException e) {
                 System.out.println("Saisie erronée, votre choix n'est pas un nombre");
+                catched = true;
                 sc.next();
             }finally {
-
                 if(intel>totalLeft){
                     System.out.println("La somme totale de vos caractéristiques ne doit pas dépasser votre niveau");
                     System.out.println("Il vous reste " + totalLeft + " points à assigner");
                 }
             }
-        } while ((intel < 0) || (intel > 100)||(intel>totalLeft));
+        } while ((intel < 0) || (intel > 100)||(intel>totalLeft)||(catched));
         player.setpIntel(intel);
         return intel;
     }
@@ -145,7 +154,7 @@ public class Game {
         } while ((uClass != 1) && (uClass != 2) && (uClass != 3));
         return uClass;
     }
-    protected static String stop(){
+    static String stop(){
         String endgame = "GAME OVER!";
         System.out.println(endgame);
         return endgame;

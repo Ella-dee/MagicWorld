@@ -3,10 +3,8 @@ package com.elodie.opcmagicworld;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Player {
+class Player {
     private String pName;
-    private String cClass;
-    private String cIntro;
     private int pLevel;
     private int pHP;
     private int pStrength;
@@ -27,8 +25,6 @@ public class Player {
      * Getters and Setters
      **/
     public String getpName() { return pName; }
-    public String getcClass(){ return cClass; }
-    public String getcIntro() { return cIntro; }
     public int getpLevel() { return pLevel;  }
     public int getpHP() { return pHP;  }
     public int getpStrength() {return pStrength; }
@@ -37,17 +33,14 @@ public class Player {
     public String getBasicAttack() {return basicAttack; }
     public String getSpecialAttack() { return specialAttack; }
     public void setpName(String pName) { this.pName = pName;  }
-    public void setcClass(String cClass) { this.cClass = cClass;  }
     public void setpLevel(int pLevel) { this.pLevel = pLevel; }
     public void setpHP(int pHP) {this.pHP = pHP; }
     public void setpStrength(int pStrength) {this.pStrength = pStrength; }
     public void setpAgility(int pAgility) {this.pAgility = pAgility; }
     public void setpIntel(int pIntel) {this.pIntel = pIntel;}
-    public void setBasicAttack(String basicAttack) {this.basicAttack = basicAttack;    }
-    public void setSpecialAttack(String specialAttack) {this.specialAttack = specialAttack; }
-    /**************************************************/
-    /**Actions
-     /****************************************/
+    void setBasicAttack(String basicAttack) {this.basicAttack = basicAttack;    }
+    void setSpecialAttack(String specialAttack) {this.specialAttack = specialAttack; }
+
     public String description() {
         String phrase = "de niveau " + pLevel + " avec " + pHP + " points de vie. J'ai une force de " + pStrength + ", agilité de " + pAgility + ", et une intélligence de " + pIntel + ".";
         return phrase;
@@ -60,24 +53,27 @@ public class Player {
     public void attackBasic(Player player){ }
     public void attackSpecial(Player player){ }
 
-    public int  actionChoice(){
+    private int  actionChoice(){
         int attackChoice = 0;
+        boolean catched;
         Scanner sc = new Scanner(System.in);
-        String whichAttack = "Veuillez choisir une attaque valide: 1- attaque basique, 2- attaque spéciale:";
         do {
             try {
-                System.out.println(pName + " (vitalité " + pHP + "), "+ whichAttack);
+                catched = false;
+                System.out.println(pName + " (vitalité " + pHP + "), veuillez choisir votre action: 1- attaque basique, 2- attaque spéciale:");
                 attackChoice = sc.nextInt();
             } catch (InputMismatchException e) {
-                System.out.println(whichAttack);
+                System.out.println("Saisie erronée, votre choix n'est pas un nombre");
+                catched = true;
                 sc.next();
             } finally {
-                if (attackChoice < 1 || attackChoice > 100) {
-                    System.out.println(whichAttack);
+                if ((attackChoice!=1) && (attackChoice!=2)) {
+                    System.out.println("Saisie erronée");
+                    catched = false;
                 }
             }
         }
-        while((attackChoice!=1) &&(attackChoice!=2));
+        while(((attackChoice!=1) && (attackChoice!=2))|| (catched));
         return attackChoice;
     }
 }

@@ -1,8 +1,8 @@
 package com.elodie.opcmagicworld;
 
 public class Scout extends  Player {
-    private String cIntro;
-    private String cClass;
+    private final String cIntro;
+    private final String cClass;
 
     public Scout(String pName, int pLevel, int pHP, int pStrength, int pAgility, int pIntel) {
         super(pName, pLevel, pHP, pStrength, pAgility, pIntel);
@@ -11,10 +11,6 @@ public class Scout extends  Player {
         this.setBasicAttack("tir à l'arc");
         this.setSpecialAttack("concentration");
     }
-    public String getcClass() {
-        return cClass;
-    }
-    public String getcIntro() { return cIntro; }
 
     @Override
     public String description() {

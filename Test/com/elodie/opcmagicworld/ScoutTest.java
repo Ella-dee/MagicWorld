@@ -5,26 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ScoutTest extends PlayerTest {
-    /**
-     * getcClass()
-     */
-    @Test
-    void Given_ScoutClass_PrintsScoutClass() {
-        Player player1 = new Scout("Test Player", 3, 5, 10, 2, 2);
-        String expectedResult = "Je suis un Rôdeur ";
-        String result = player1.getcClass();
-        assertEquals(expectedResult, result);
-    }
-    /**
-     * getcIntro()
-     */
-    @Test
-    void Given_ScoutClass_PrintsScoutIntro() {
-        Player player1 = new Scout("Test Player", 3, 5, 10, 2, 2);
-        String expectedResult = "*apparait par derrière en toute discrétion* ";
-        String result = player1.getcIntro();
-        assertEquals(expectedResult, result);
-    }
+
 
     /**
      * description()
@@ -90,9 +71,8 @@ class ScoutTest extends PlayerTest {
     @Test
     void Given_Concentration_ItEqualsScoutLevelDividedBy2() {
         Player player1 = new Scout("Test Player", 4, 5, 10, 2, 2);
-        int concentration = player1.getpLevel() / 2;
         int expectedResult = 2;
-        int result = concentration;
+        int result = player1.getpLevel() / 2;
         assertEquals(expectedResult, result);
     }
     @Test

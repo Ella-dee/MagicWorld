@@ -1,8 +1,8 @@
 package com.elodie.opcmagicworld;
 
 public class Magician extends Player {
-    private String cIntro;
-    private String cClass;
+    private final String cIntro;
+    private final String cClass;
 
     public Magician(String pName, int pLevel, int pHP, int pStrength, int pAgility, int pIntel) {
         super(pName, pLevel, pHP, pStrength, pAgility, pIntel);
