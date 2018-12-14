@@ -12,7 +12,8 @@ import java.util.Scanner;
  * <li>choix des caractéristiques:
  * <ol>
  *     <li>force</li><li>agilité</li><li>intéligence</li>
- * </ol></li>
+ * </ol><
+ * /li>
  * <li>Ces caractéristiques peuvent être à zéro, mais leur somme ne doit pas dépasser le 'level'</li>
  * <li>La caractéristique HP, se base sur le level. Les points de vies seront ainsi égaux au niveau multiplié par 5.</li>
  * </ul>
